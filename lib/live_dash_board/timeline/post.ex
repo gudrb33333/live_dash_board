@@ -14,7 +14,8 @@ defmodule LiveDashBoard.Timeline.Post do
   @doc false
   def changeset(post, attrs) do
     post
-    |> cast(attrs, [:username, :body, :like_count, :reports_count])
-    |> validate_required([:username, :body, :like_count, :reports_count])
+    |> cast(attrs, [:body])
+    |> validate_required([:body])
+    |> validate_length(:body, min: 2, max: 250)
   end
 end
