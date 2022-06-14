@@ -4,7 +4,7 @@ import Config
 config :live_dash_board, LiveDashBoard.Repo,
   username: "postgres",
   password: "postgres",
-  hostname: "localhost",
+  hostname: "xr-cloud-dev-db-1.c4vwndoqrlgr.ap-northeast-2.rds.amazonaws.com",
   database: "live_dash_board_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
